@@ -1,0 +1,12 @@
+<resources>
+
+    <style name="mRowLabelStyle">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="mRowValueStyle">
+        <item name="android:textColor">#90FFFFFF</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+</resources>
