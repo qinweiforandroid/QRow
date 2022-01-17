@@ -6,8 +6,8 @@ import android.util.Log;
  * Created by qinwei on 2016/1/8 10:48
  * email:qinwei_it@163.com
  */
-public class RowTrace {
-    private static final String TAG = "RowView";
+public class RowLog {
+    private static final String TAG = "RowLog";
 
     public static boolean model = false;
 

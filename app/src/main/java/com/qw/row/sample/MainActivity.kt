@@ -41,7 +41,7 @@ class MainActivity : AppCompatActivity(), OnRowClickListener {
             GroupDescriptor().add(
                 UserIconRowDescriptor.Builder()
                     .setLabel("头像")
-                    .setAvatar("https://dss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1225597740,615370700&fm=111&gp=0.jpg")
+                    .setAvatar("https://img0.baidu.com/it/u=2705683877,4119372584&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500")
                     .setId(id_friend).builder()
             )
         )

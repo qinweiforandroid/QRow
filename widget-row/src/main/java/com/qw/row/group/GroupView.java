@@ -13,7 +13,7 @@ import com.qw.row.core.OnRowClickListener;
 import com.qw.row.core.RowDescriptor;
 import com.qw.row.core.Row;
 import com.qw.row.core.RowFactory;
-import com.qw.row.utils.DensityUtil;
+import com.qw.row.utils.RowUtil;
 
 
 public class GroupView extends LinearLayout {
@@ -61,7 +61,7 @@ public class GroupView extends LinearLayout {
                 mGroupViewTitleLabel.setText(groupDescriptor.title);
             }
             LayoutParams params = new LayoutParams(LayoutParams.MATCH_PARENT, 1);
-            params.leftMargin = DensityUtil.dip2px(context, 16);
+            params.leftMargin = RowUtil.dip2px(context, 16);
             Row rowView;
             View line;
             RowDescriptor rowDescriptor;

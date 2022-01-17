@@ -9,8 +9,8 @@ import android.widget.LinearLayout;
 
 import com.qw.row.group.GroupView;
 import com.qw.row.core.OnRowClickListener;
-import com.qw.row.utils.DensityUtil;
-import com.qw.row.utils.RowTrace;
+import com.qw.row.utils.RowUtil;
+import com.qw.row.utils.RowLog;
 
 
 public class ContainerView extends LinearLayout implements OnTouchListener {
@@ -50,7 +50,7 @@ public class ContainerView extends LinearLayout implements OnTouchListener {
         if (descriptor.groupDescriptors != null && descriptor.groupDescriptors.size() > 0) {
             GroupView groupView;
             LayoutParams params = new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT);
-            params.topMargin = DensityUtil.dip2px(context, 10);
+            params.topMargin = RowUtil.dip2px(context, 10);
 
             for (int i = 0; i < descriptor.groupDescriptors.size(); i++) {
                 groupView = new GroupView(context);
@@ -93,7 +93,7 @@ public class ContainerView extends LinearLayout implements OnTouchListener {
     @Override
     public boolean onInterceptTouchEvent(MotionEvent ev) {
         if (ev.getPointerCount() > 1) {
-            RowTrace.e(ev.getTouchMinor() + "," + ev.getPointerCount());
+            RowLog.e(ev.getTouchMinor() + "," + ev.getPointerCount());
             return true;
         }
         switch (ev.getAction()) {
